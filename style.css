@@ -28,24 +28,44 @@ nav ul li a {
     font-weight: bold;
 }
 
-.modelos-container {
+.carrusel {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carrusel-inner {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    transition: transform 0.5s ease;
 }
 
-.modelo {
-    background: #333;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.modelo img {
+.carrusel-inner img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.carrusel-btn.prev {
+    left: 10px;
+}
+
+.carrusel-btn.next {
+    right: 10px;
 }
 
 footer {
