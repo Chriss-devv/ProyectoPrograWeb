@@ -14,4 +14,4 @@ function moverCarrusel(direction) {
 
     const offset = -currentIndex * 100;
     carruselInner.style.transform = `translateX(${offset}%)`;
-}
+} 
