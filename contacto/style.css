@@ -1,4 +1,4 @@
-fform {
+form {
     max-width: 600px;
     margin: 50px auto;
     background-color: #222; /* Fondo oscuro */
@@ -85,6 +85,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
 }
 
 
