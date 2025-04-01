@@ -14,4 +14,9 @@ function moverCarrusel(direction) {
 
     const offset = -currentIndex * 100;
     carruselInner.style.transform = `translateX(${offset}%)`;
-} 
+}
+
+// Agregar movimiento automático
+setInterval(() => {
+    moverCarrusel(1); 
+}, 3000); 

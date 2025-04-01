@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ti-Bikersz</title>
+    <link rel="stylesheet" href="style.css"> <!-- Referencia al archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Ti-Bikersz</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="modelos/modelos.html">Nuestros Modelos</a></li> <!-- Enlace a la carpeta modelos -->
+                <li><a href="nosotros/nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="colaboradores/colaboradores.html">Colaboradores</a></li>
+                <li><a href="accesorios/accesorios.html">Accesorios</a></li>
+                <li><a href="contacto/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido a Ti-Bikersz</h2>
+        <p> Selecciona un elemento en la barra de navegacion para explorar nuestra colección de motocicletas y accesorios e informacion sobre nosotros.</p>
+        <!-- Carrusel de imágenes -->
+        <div class="carrusel">
+            <div class="carrusel-inner">
+                <img src="motos/moto1.jpg" alt="Moto 1">
+                <img src="motos/moto2.jpg" alt="Moto 2">
+                <img src="motos/moto3.jpg" alt="Moto 3">
+                <img src="motos/moto4.jpg" alt="Moto 4">
+                <img src="motos/moto5.jpg" alt="Moto 5">
+                <img src="motos/moto6.jpg" alt="Moto 6">
+                <img src="motos/moto7.jpg" alt="Moto 7">
+                <img src="motos/moto8.jpg" alt="Moto 8">
+                <img src="motos/moto9.jpg" alt="Moto 9">
+                <img src="motos/moto10.jpg" alt="Moto 10">
+            </div>
+            <button class="carrusel-btn prev" onclick="moverCarrusel(-1)">&#10094;</button>
+            <button class="carrusel-btn next" onclick="moverCarrusel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    
+
+    
+
+    <footer>
+        <div class="redes">
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="whatsapp.png" alt="Whatsapp"></a>
+        </div>
+        <p>&copy; 2025 Ti-Bikersz - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Referencia al archivo JavaScript -->
+</body>
+</html>

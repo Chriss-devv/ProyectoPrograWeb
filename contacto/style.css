@@ -1,0 +1,101 @@
+fform {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #222; /* Fondo oscuro */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    text-align: center; /* Centra el texto en todo el formulario */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center; /* Centra el texto de las etiquetas */
+}
+
+form input, form textarea {
+    width: 80%; /* Reduce el ancho de las cajas para centrar mejor */
+    margin: 0 auto 15px; /* Centra las cajas y añade espaciado */
+    padding: 10px;
+    background-color: #333; /* Fondo oscuro para las cajas */
+    color: white;
+    border: 1px solid #444; /* Bordes sutiles */
+    border-radius: 5px; /* Bordes redondeados */
+    display: block; /* Asegura el diseño en bloque */
+}
+
+form textarea {
+    resize: none; /* Evita el cambio de tamaño */
+    height: 100px; /* Tamaño fijo */
+}
+
+form button {
+    width: 80%; /* Botón más estilizado */
+    margin: 0 auto; /* Centra el botón */
+    padding: 10px;
+    background-color: #0056b3; /* Color azul coherente */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Centra el texto del botón */
+    display: block; /* Asegura el diseño en bloque */
+}
+
+form button:hover {
+    background-color: #003f7f; /* Color más oscuro al pasar el ratón */
+}
+
+form button:active {
+    background-color: #002960; /* Color aún más oscuro al hacer clic */
+}
+
+form input:focus, form textarea:focus {
+    outline: 2px solid #007bff; /* Resalta las cajas al enfocarse */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #111;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+footer {
+    background: #111;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.redes img {
+    width: 30px;
+    margin: 0 5px;
+}
