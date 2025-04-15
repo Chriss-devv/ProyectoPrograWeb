@@ -104,3 +104,90 @@ footer {
     width: 30px;
     margin: 0 5px;
 }
+/* Estilos para el carrusel de preguntas frecuentes */
+.faq-carousel {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.faq-carousel h2 {
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.faq-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.faq-slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.faq-slide h3 {
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+.faq-slide p {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.carousel-controls button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.carousel-controls button:hover {
+    background-color: #003f7f;
+}
+
+.dots-container {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ff6600;
+}
