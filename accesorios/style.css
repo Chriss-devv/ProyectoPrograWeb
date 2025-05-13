@@ -31,7 +31,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ff6600;
-}
+}   
 
 
 
@@ -44,4 +44,90 @@ footer {
 .redes img {
     width: 30px;
     margin: 0 5px;
+}
+/* Estilos para la sección de accesorios */
+#accesorios {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.buscador {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.buscador-input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #444;
+    background: #333;
+    color: white;
+}
+
+.buscador-btn {
+    padding: 10px 15px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.buscador-btn:hover {
+    background: #e65c00;
+}
+
+.galeria-accesorios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.accesorio {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.accesorio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.2);
+}
+
+.accesorio img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accesorio h3 {
+    margin: 10px 0;
+    color: #ff6600;
+}
+
+.accesorio p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-comprar {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-comprar:hover {
+    background: #e65c00;
 }
