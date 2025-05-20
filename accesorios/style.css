@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+img {
+    width: 100vw;
+}
+
 header {
     background: #111;
     padding: 15px;
