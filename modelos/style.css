@@ -44,6 +44,11 @@ nav ul li a:hover {
     border: none;
 }
 
+img
+{
+    width: 100vw;
+}
+
 .modelo {
     background: #333;
     padding: 15px;
