@@ -56,3 +56,40 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mostrar primer slide al cargar
     showSlide(0);
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const data = {};
+
+        for (let [key, value] of formData.entries()) {
+            data[key] = value;
+        }
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                alert('Mensaje enviado correctamente');
+                form.reset();
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        alert(data.errors.map(error => error.message).join(', '));
+                    } else {
+                        alert('Error al enviar el mensaje');
+                    }
+                });
+            }
+        }).catch(error => {
+            alert('Error al enviar el mensaje');
+        });
+    });
+});
